@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.design.appproject.widget.SmartRecyclerView
+        android:id="@+id/comment_srv"
+        android:layout_width="match_parent"
+        android:layout_above="@id/comment_ll"
+        android:layout_height="match_parent"/>
+
+
+    <LinearLayout
+        android:id="@+id/comment_ll"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:elevation="5dp"
+        android:background="@color/common_white"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/comment_tv"
+            android:hint="请发表您的评论..."
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:background="@drawable/shape_radius360_gray"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</RelativeLayout>

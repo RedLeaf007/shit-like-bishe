@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/title_et"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:hint="标题"
+        android:lines="1"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.design.appproject.widget.BottomSpinner
+        android:id="@+id/options_bs"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:background="@drawable/common_selector_line_bottom"
+        android:text="开放"
+        app:layout_constraintTop_toBottomOf="@id/title_et" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/options_bs">
+
+        <jp.wasabeef.richeditor.RichEditor
+            android:id="@+id/rich_et"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp" />
+
+        <HorizontalScrollView
+            android:id="@+id/edit_hsv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/black">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/action_bold"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_columnWeight="1"
+                    android:background="@null"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/bold" />
+
+                <ImageButton
+                    android:id="@+id/action_italic"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_columnWeight="1"
+                    android:background="@null"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/italic" />
+
+                <ImageButton
+                    android:id="@+id/action_strikethrough"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_columnWeight="1"
+                    android:background="@null"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/strikethrough" />
+
+                <ImageButton
+                    android:id="@+id/action_underline"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_columnWeight="1"
+                    android:background="@null"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/underline" />
+
+                <ImageButton
+                    android:id="@+id/action_heading1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_columnWeight="1"
+                    android:background="@null"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/h1" />
+
+                <ImageButton
+                    android:id="@+id/action_heading2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_columnWeight="1"
+                    android:background="@null"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/h2" />
+
+                <ImageButton
+                    android:id="@+id/action_heading3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_columnWeight="1"
+                    android:background="@null"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/h3" />
+
+                <ImageButton
+                    android:id="@+id/action_heading4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_columnWeight="1"
+                    android:background="@null"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/h4" />
+
+                <ImageButton
+                    android:id="@+id/action_heading5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_columnWeight="1"
+                    android:background="@null"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/h5" />
+
+                <ImageButton
+                    android:id="@+id/action_indent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_columnWeight="1"
+                    android:background="@null"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/indent" />
+
+                <ImageButton
+                    android:id="@+id/action_outdent"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_columnWeight="1"
+                    android:background="@null"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/outdent" />
+
+                <ImageButton
+                    android:id="@+id/action_align_left"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_columnWeight="1"
+                    android:background="@null"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/justify_left" />
+
+                <ImageButton
+                    android:id="@+id/action_align_center"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_columnWeight="1"
+                    android:background="@null"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/justify_center" />
+
+                <ImageButton
+                    android:id="@+id/action_align_right"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_columnWeight="1"
+                    android:background="@null"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/justify_right" />
+
+                <ImageButton
+                    android:id="@+id/action_insert_bullets"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_columnWeight="1"
+                    android:background="@null"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/bullets" />
+
+                <ImageButton
+                    android:id="@+id/action_insert_numbers"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_columnWeight="1"
+                    android:background="@null"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/numbers" />
+
+                <ImageButton
+                    android:id="@+id/action_insert_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_columnWeight="1"
+                    android:background="@null"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/insert_image" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </HorizontalScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

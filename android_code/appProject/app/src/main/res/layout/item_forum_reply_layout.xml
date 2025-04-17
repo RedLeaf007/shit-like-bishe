@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+            android:id="@+id/avatar_qriv"
+            app:qmui_corner_radius="20dp"
+            tools:src="@color/common_colorPrimary"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/name_tv"
+                tools:text="用户名1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/time_tv"
+                tools:text="时间"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.design.appproject.widget.CustomWebView
+        android:id="@+id/content_tv"
+        android:padding="10dp"
+        tools:text="内容"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="回复"
+        android:layout_gravity="end"
+        android:padding="10dp"
+        android:textColor="@color/common_colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qmuiteam.qmui.layout.QMUILinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:qmui_radius="10dp"
+    android:layout_margin="5dp"
+    android:padding="10dp"
+    app:qmui_shadowAlpha="1"
+    app:qmui_shadowElevation="10dp"
+    android:background="@color/common_bg_color"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/icon_qriv"
+        android:src="@mipmap/paper"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:paddingStart="10dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/title_tv"
+            tools:text="111111111111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/user_tv"
+            android:text="发布人:"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/common_title_gray_color2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_marginTop="8dp"
+            android:text="发布时间:"
+            android:textColor="@color/common_title_gray_color2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/options_llc"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/look_btn"
+                android:text="查看"
+                android:textColor="@color/common_white"
+                android:background="@color/common_colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/update_btn"
+                android:text="修改"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/common_white"
+                android:background="@color/common_green_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/delete_btn"
+                android:text="删除"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/common_white"
+                android:background="@color/common_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</com.qmuiteam.qmui.layout.QMUILinearLayout>
